@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "zuir/WtkUu0=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\api-Rest.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jonat\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.2\\microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "C:\\Users\\jonat\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}

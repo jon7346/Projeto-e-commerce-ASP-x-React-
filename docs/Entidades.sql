@@ -13,10 +13,10 @@ clientes:
 estoque: 
 carrinho: 
 itens do carrinho: 
-endereço: 
+endereï¿½o: 
 
 
-construir a logica/fluxo de utlização do aplicativo 
+construir a logica/fluxo de utlizaï¿½ï¿½o do aplicativo 
 criar os controllers e classes 
 desenvolver a rest api ou as api 
 por fim o frontend em react 
@@ -53,6 +53,12 @@ nota decimal(2,2)
 
 create table estoque (
 id int primary key, 
-idProduto 
+idProduto int, 
 idloja int, 
-foreign key      
+foreign key (idloja) references lojas(id)      )
+
+
+create table produto (
+id 
+
+)
