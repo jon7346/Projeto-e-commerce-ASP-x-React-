@@ -69,11 +69,16 @@ entrada datetime
 
 )
 
-
 create table produto (
 id int primary key identity, 
 preco decimal(10,2), 
 descricao varchar(250),
 nome varchar(150)
+
+)
+
+create table Carrinho (
+id int primary key identity, 
+
 
 )
