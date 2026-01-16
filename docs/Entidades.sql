@@ -1,5 +1,5 @@
 /*
-Sistema de e-commercie 
+Sistema de gestão financeira
 Backend em c# 
 front-end em react 
 banco em SQL 
@@ -26,9 +26,9 @@ por fim o frontend em react
 */
 
 
-create database e_commercie; 
+create database Projetinho; 
 go 
-use e_commercie;
+use Projetinho;
 go
 
 create table produtos( 
@@ -79,6 +79,24 @@ nome varchar(150)
 
 create table Carrinho (
 id int primary key identity, 
-
+idCliente foreign key references cliente(id)
 
 )
+
+USE [Projetinho]
+GO
+
+INSERT INTO [dbo].[produtos]
+           ([preco]
+           ,[nome]
+           ,[marca]
+           ,[descricao]
+           ,[cor])
+     VALUES
+           (10.00,
+           'dentadura',
+           'Marcia',
+           'comum',
+           'padrão')
+GO
+
