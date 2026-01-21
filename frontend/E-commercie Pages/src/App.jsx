@@ -1,10 +1,22 @@
-import Produtos from "./produtos";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageProduto from "./Pages/pageProduto.jsx";
+import Barra from "./Components/Barra.jsx";
+import './App.css';
 
 function App() {
   return (
-    <div>
-      <Produtos />
-    </div>
+    <>
+       <header className="centralizar-conteudo">  
+        <BrowserRouter>
+          <Barra />
+          <Routes>
+                <Route path="/" element={<h1>Home</h1>} />
+                <Route path="/produtos" element={<PageProduto />} />
+            </Routes>
+        </BrowserRouter>
+        </header>
+    </>
   );
 }
 
