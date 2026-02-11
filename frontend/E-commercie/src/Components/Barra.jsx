@@ -9,14 +9,14 @@ function Barra() {
      
     <nav>
       <h1>Minha Loja</h1>
-      <table>
-        <th>
-         <td><Link to="/">Home</Link></td>
-        </th>  
-        <th>  
-         <td><Link to="/produtos">Produtos</Link></td>
-        </th>
-      </table>
+      
+        <button>
+         <Link to="/">Home</Link>
+        </button>
+        <button>
+         <Link to="/produtos">Produtos</Link>
+        </button>
+      
     </nav>
 </>
   );

@@ -44,14 +44,14 @@ create table Clientes (
 id int primary key identity, 
 nome varchar(150),
 CPF varchar(150),
-nacimento date, 
-
+nacimento date 
 )
 
 create table lojas (
 id int primary key identity, 
 idEstoque int, 
 FOREIGN KEY (idEstoque) references estoque(id), 
+idPedidos int, 
 segmento varchar(150),
 nome varchar(150), 
 localidade varchar(150), 
@@ -69,19 +69,11 @@ entrada datetime
 
 )
 
-create table produto (
-id int primary key identity, 
-preco decimal(10,2), 
-descricao varchar(250),
-nome varchar(150)
-
-)
-
-create table Carrinho (
-id int primary key identity, 
-idCliente foreign key references cliente(id)
-
-)
+create table Pedido ( 
+ id int primary key identity,
+ idcliente int foreign key references clientes(id),
+ idproduto int foreign key references produtos(id)
+) 
 
 USE [Projetinho]
 GO

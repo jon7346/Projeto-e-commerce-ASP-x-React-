@@ -1,0 +1,6 @@
+@Modulo_1___Http_protocol___Http_context_HostAddress = http://localhost:5177
+
+GET {{Modulo_1___Http_protocol___Http_context_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

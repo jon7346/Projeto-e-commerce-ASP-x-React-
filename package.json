@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev:api": "cd backend/api-rest && dotnet watch run",
-    "dev:web": "cd frontend/E-commercie Pages && npm run dev",
+    "dev:web": "cd frontend/E-commercie && npm run dev",
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\""
   },
   "devDependencies": {

@@ -61,5 +61,27 @@ namespace api_Rest.Controller
 
             return CreatedAtAction(nameof(BuscarProdutoPorId), new { id = produtoModel.id }, produtoModel);
         }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public ActionResult<ProdutoModel> DeletarProduto(int id )
+        {
+            var produto = _context.Produtos.Find(id); 
+
+            if (produto == null)
+            {
+                return NotFound("Registro não deletado!!");
+            }
+            else
+            {
+                _context.Produtos.Remove(produto);
+            }
+
+
+            return Ok("Deletado!!");
+
+
+
+        }
     }
 }
