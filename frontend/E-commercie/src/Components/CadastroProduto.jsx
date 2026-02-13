@@ -8,7 +8,6 @@ function CadastroProduto() {
 
     const [nome, setNome] = useState("");
     const [preco, setPreco] = useState("");
-    const [estoque, setEstoque] = useState("");
     const [cor, setCor] = useState("");
     const [marca, setMarca] = useState("");
     const [descricao, setDescricao] = useState("");
@@ -40,7 +39,7 @@ function CadastroProduto() {
         
      // ===== SALVAR PRODUTO =====
     async function salvarProduto(e) {
-        e.preventDefault();
+        
         setErro("");
 
         if (!nome || !preco || !marca || !descricao || !cor 

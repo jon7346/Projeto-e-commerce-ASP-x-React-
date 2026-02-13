@@ -75,6 +75,7 @@ namespace api_Rest.Controller
             else
             {
                 _context.Produtos.Remove(produto);
+                _context.SaveChanges();
             }
 
 
