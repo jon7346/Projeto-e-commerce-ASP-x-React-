@@ -4,7 +4,8 @@
   "scripts": {
     "dev:api": "cd backend/api-rest && dotnet watch run",
     "dev:web": "cd frontend/E-commercie && npm run dev",
-    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\""
+    "dev:container": "docker start sql_ecommercie",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:web\" \"npm run dev:container\""
   },
   "devDependencies": {
     "concurrently": "^9.0.0"

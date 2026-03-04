@@ -1,16 +1,20 @@
 import ListarProdutos from "../Components/ListarProdutos.jsx";
 import CadastroProduto from "../Components/CadastroProduto.jsx";
 import DeleteProduto from "../Components/deleteProduto.jsx";
-import '../App.css';
+import './pageProduto.css';
 
 
 function PageProduto() {
   return (
-    <main className="centralizar-conteudo">
-      <CadastroProduto />
-      <ListarProdutos />
-      <DeleteProduto />
-    </main>
+    <div className="centralizar-conteudo page" >
+      <main className="centralizar-conteudo center">
+        <CadastroProduto />
+        <DeleteProduto />
+        <ListarProdutos />
+        
+      </main>
+    
+    </div>
   );
 }
 

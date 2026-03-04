@@ -46,11 +46,8 @@ nome varchar(150),
 CPF varchar(150),
 nacimento date 
 )
-
 create table lojas (
 id int primary key identity, 
-idEstoque int, 
-FOREIGN KEY (idEstoque) references estoque(id), 
 idPedidos int, 
 segmento varchar(150),
 nome varchar(150), 
@@ -58,13 +55,12 @@ localidade varchar(150),
 nota decimal(2,2)
 
 )
-
 create table estoque (
 id int primary key identity, 
 idProduto int, 
 idloja int, 
 foreign key (idloja) references lojas(id), 
-foreign key (idProduto) references produto(id),
+foreign key (idProduto) references produtos(id),
 entrada datetime
 
 )
@@ -75,20 +71,8 @@ create table Pedido (
  idproduto int foreign key references produtos(id)
 ) 
 
-USE [Projetinho]
-GO
 
-INSERT INTO [dbo].[produtos]
-           ([preco]
-           ,[nome]
-           ,[marca]
-           ,[descricao]
-           ,[cor])
-     VALUES
-           (10.00,
-           'dentadura',
-           'Marcia',
-           'comum',
-           'padrão')
-GO
+
+
+
 

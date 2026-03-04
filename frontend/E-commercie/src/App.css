@@ -1,9 +1,15 @@
+nav {
+  display: flex;
+  align-items: right;
+  justify-content: space-between;
+  background-color: #039a81;
+  width: 100%;
+}
 .centralizar-conteudo {
   display: flex;
-  flex-direction: column; /* Alinha os itens um abaixo do outro */
   align-items: center;    /* Centraliza horizontalmente */
   justify-content: center; /* Centraliza verticalmente */
-  min-height: 100vh;      /* Faz o container ocupar toda a altura da tela */
+  min-height: 10px;      /* Faz o container ocupar toda a altura da tela */
   text-align: center;
 }
 
@@ -13,4 +19,16 @@ body {
   padding: 0;
   background-color: #191919;
   color: #cdcdcd;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  font-size: 16px;
+  margin: 0 10px;
+
+}
+.btn-link a {
+  color: #cdcdcd;
+  text-decoration: none;
 }

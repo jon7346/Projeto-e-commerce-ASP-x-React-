@@ -25,7 +25,7 @@ function CadastroProduto() {
       const response = await fetch(API_URL);
 
       if (!response.ok) {
-        throw new Error("Erro ao buscar produtos");
+        throw new Error("Erro ao Salvar produto");
       }
 
       const data = await response.json();

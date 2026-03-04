@@ -1,0 +1,17 @@
+.centralizar-conteudo {
+  display: flex;
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  min-height: 10px;      /* Faz o container ocupar toda a altura da tela */
+  text-align: center;
+  flex-direction: column;
+}
+.page {
+    height: 100vh;
+    margin: 1;
+}
+.center { 
+    background-color: #414141;
+    width: 17%;
+    border-radius: 10px;
+}
