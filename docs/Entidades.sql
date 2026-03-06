@@ -44,7 +44,7 @@ create table Clientes (
 id int primary key identity, 
 nome varchar(150),
 CPF varchar(150),
-nacimento date 
+nascimento date 
 )
 create table lojas (
 id int primary key identity, 
@@ -70,9 +70,25 @@ create table Pedido (
  idcliente int foreign key references clientes(id),
  idproduto int foreign key references produtos(id)
 ) 
+go
+x
+
+--controle de estoque
+
+Create trigger ControleDeEstouqe
+on Pedido
+after insert,update as begin
+
+if (exists(select * from inserted) || exists(select * from deleted))
+	begin
+		update Pedido 
+		set 
+
+	end; 
+ 
+
+end;
+go
 
 
-
-
-
-
+EXEC sp_rename 'Clientes.nacimento', 'nascimento', 'COLUMN';

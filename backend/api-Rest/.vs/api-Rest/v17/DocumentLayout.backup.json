@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\controller\\lojacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:controller\\lojacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\model\\lojamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:model\\lojamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\controller\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:controller\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:model\\clientemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\controller\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|solutionrelative:controller\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E76E9E0E-1C2A-4586-9C4F-FFF4BF6B0493}|api-Rest.csproj|c:\\users\\jonat\\github\\projeto-e-commerce-asp-x-react-\\backend\\api-rest\\controller\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -123,40 +143,126 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Title": "LojaModel.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\model\\LojaModel.cs",
+              "RelativeDocumentMoniker": "model\\LojaModel.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\model\\LojaModel.cs",
+              "RelativeToolTip": "model\\LojaModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-24T16:42:20.247Z",
+              "WhenOpened": "2026-03-06T11:51:40.657Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\ClienteController.cs",
-              "RelativeDocumentMoniker": "Controller\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\ClienteController.cs",
-              "RelativeToolTip": "Controller\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "Controller\\EstoqueController.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\EstoqueController.cs",
+              "RelativeToolTip": "Controller\\EstoqueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T18:07:50.819Z",
+              "WhenOpened": "2026-03-06T11:50:35.568Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LojaController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\LojaController.cs",
+              "RelativeDocumentMoniker": "Controller\\LojaController.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\LojaController.cs",
+              "RelativeToolTip": "Controller\\LojaController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:49:06.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PedidoController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\PedidoController.cs",
+              "RelativeDocumentMoniker": "Controller\\PedidoController.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\PedidoController.cs",
+              "RelativeToolTip": "Controller\\PedidoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:31:27.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T11:47:01.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClienteModel.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\model\\ClienteModel.cs",
+              "RelativeDocumentMoniker": "model\\ClienteModel.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\model\\ClienteModel.cs",
+              "RelativeToolTip": "model\\ClienteModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T22:51:25.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-13T18:24:00.365Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "06d9d533-7143-414d-8996-bd3e307c1ddb",
+        "Display": 1,
+        "X": 1366,
+        "Y": 357,
+        "Width": 1882,
+        "Height": 932,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controller\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\Controller\\ClienteController.cs",
+              "RelativeToolTip": "Controller\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T18:07:50.819Z",
               "EditorCaption": ""
             }
           ]

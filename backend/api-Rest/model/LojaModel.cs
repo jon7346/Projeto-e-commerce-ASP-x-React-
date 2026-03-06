@@ -4,8 +4,6 @@
     {
        public int id { get; set; } 
 
-       public int idEstoque { get; set; }
-
        public int idPedidos { get; set; }
 
        public string segmento { get; set; }
