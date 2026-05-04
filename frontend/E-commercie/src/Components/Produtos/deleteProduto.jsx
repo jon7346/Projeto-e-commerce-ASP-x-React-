@@ -5,12 +5,12 @@ const API_URL = "http://localhost:5262/api/Produtos";
 function deleteProduto() {
      
         //define a variavel id     
-        const [id, setId] = useState("");
+        const [nome, setnome] = useState("");
         //define a variavel carregando 
         const [carregando, setCarregando] = useState(false);
 
-       function deletar (id) { 
-        axios.delete(`${API_URL}/${id}`)
+       function deletar (nome) { 
+        axios.delete(`${API_URL}/${nome}`)
         .then(response => {
             console.log("Produto deletado com sucesso:", response.data);
         })
@@ -20,10 +20,10 @@ function deleteProduto() {
         
        return(
         <>
-        <form onSubmit={deletar(id)}> 
+        <form onSubmit={deletar(nome)}> 
          <div>
-              <label>ID do Produto para deletar:</label><br/>
-              <input type="text" value={id} onChange={(e) => setId(e.target.value)} />      
+              <label>nome do Produto para deletar:</label><br/>
+              <input type="text" value={nome} onChange={(e) => setnome(e.target.value)} />      
          </div><br/>
          <div> 
             <button type = "submit" > { carregando ? "Deletando..." : "Deletar" } </button>

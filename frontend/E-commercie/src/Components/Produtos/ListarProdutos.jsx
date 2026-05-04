@@ -45,13 +45,13 @@ function ListarProdutos() {
   // ===== RENDER =====
   return (
 
-  <div>
+  <div style={{ position:"relative", right:"0" }}>
 
       <h3>Lista de Produtos</h3>
 
       {carregando && <p>Carregando...</p>}
 
-      <ul>
+      <ul >
         {produtos.map(produto => (
           <li key={produto.id}>
             <strong>{produto.nome}</strong> 

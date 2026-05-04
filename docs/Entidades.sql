@@ -31,13 +31,21 @@ go
 use Projetinho;
 go
 
+drop table produtos;
+drop table lojas;
+drop table estoque;
+drop table Clientes;
+drop table Pedido;
+
 create table produtos( 
 id int primary key identity, 
 preco decimal(13,2),
 nome varchar(150),
 marca varchar(150),
 descricao varchar(150),
-cor varchar(25)
+cor varchar(25),
+idloja int,
+foreign key (idloja) references lojas(id)
 )
  
 create table Clientes (
@@ -51,6 +59,7 @@ id int primary key identity,
 idPedidos int, 
 segmento varchar(150),
 nome varchar(150), 
+
 localidade varchar(150), 
 nota decimal(2,2)
 
@@ -71,7 +80,7 @@ create table Pedido (
  idproduto int foreign key references produtos(id)
 ) 
 go
-x
+
 
 --controle de estoque
 

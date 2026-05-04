@@ -79,4 +79,3 @@ C:\Users\jonat\github\Projeto-e-commerce-ASP-x-React-\backend\api-Rest\obj\Debug
 C:\Users\jonat\github\Projeto-e-commerce-ASP-x-React-\backend\api-Rest\obj\Debug\net9.0\api-Rest.pdb
 C:\Users\jonat\github\Projeto-e-commerce-ASP-x-React-\backend\api-Rest\obj\Debug\net9.0\api-Rest.genruntimeconfig.cache
 C:\Users\jonat\github\Projeto-e-commerce-ASP-x-React-\backend\api-Rest\obj\Debug\net9.0\ref\api-Rest.dll
-C:\Users\jonat\github\Projeto-e-commerce-ASP-x-React-\backend\api-Rest\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

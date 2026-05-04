@@ -5,7 +5,6 @@ function CadastroProduto() {
         // ===== ESTADOS =====
     const [produtos, setProdutos] = useState([]);
     const [carregando, setCarregando] = useState(false);
-
     const [nome, setNome] = useState("");
     const [preco, setPreco] = useState("");
     const [cor, setCor] = useState("");
@@ -39,11 +38,10 @@ function CadastroProduto() {
         
      // ===== SALVAR PRODUTO =====
     async function salvarProduto(e) {
-        
+        e.preventDefault();
         setErro("");
 
-        if (!nome || !preco || !marca || !descricao || !cor 
-        ) {
+        if (!nome || !preco || !marca || !descricao || !cor ) {
         setErro("Preencha todos os campos");
         return;
         }
@@ -57,11 +55,11 @@ function CadastroProduto() {
             "Content-Type": "application/json"
             },
             body: JSON.stringify({
-            nome,
+            nome: nome,
             preco: Number(preco),
-            cor,
-            marca,
-            descricao
+            cor: cor,
+            marca: marca,
+            descricao: descricao
             })
         });
 
@@ -72,7 +70,6 @@ function CadastroProduto() {
         // Limpa formulário
         setNome("");
         setPreco("");
-      
         setCor("");
         setMarca(""); 
         setDescricao("");

@@ -12,6 +12,40 @@
 }
 .center { 
     background-color: #414141;
-    width: 17%;
     border-radius: 10px;
+}
+
+.formulario {
+    padding: 50px 20px 50px 20px;
+}
+.formulario button {
+  background-color: #039a81;
+  border: none;
+  padding: 5px 55px 5px 55px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.formulario input {
+  padding: 7px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+.formulario a {
+  color: #039a81;
+  text-decoration: none;
+  font-size: 14px;
+}
+.fromulario h2{
+ color:  #039a81;
+}
+
+.listarProdutos {
+  border: 1px solid #039a81;
+  border-radius: 10px;
+  position: relative;
+  right: 0;
+  top: 0;
 }

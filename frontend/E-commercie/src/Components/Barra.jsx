@@ -31,6 +31,11 @@ function Barra() {
           <Link to="/login">Login</Link>
           </button>
         </span>
+        <span>
+          <button className="btn-link">
+          <Link to="/cadastro">Cadastro</Link>
+          </button>
+        </span>
     
       </div>
     </nav>

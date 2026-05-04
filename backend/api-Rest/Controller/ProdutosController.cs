@@ -34,15 +34,16 @@ namespace api_Rest.Controller
         }
 
         //define novamente o tipo porém adiciona um parametro Id ao final da rota ficando "Localhost/api/Produtos(nome da classe)" + "id"
-        [HttpGet]
-        [Route("{id}")]
+        //[HttpGet]
+        //[Route("{id}")]
 
         public ActionResult<ProdutoModel> BuscarProdutoPorId(int id)
         {
             var Produto = _context.Produtos.Find(id);
-               
-           if(Produto == null) {    
-             
+
+            if (Produto == null)
+            {
+
                 return NotFound("Registro não encontrado!");
             }
 
@@ -52,21 +53,31 @@ namespace api_Rest.Controller
         //Define como tipo Post, como não foi especificado uma rota ira ficar na rota padrão "Localhost/api/Produtos(nome da classe)"
         [HttpPost]
         public ActionResult<ProdutoModel> CriarProduto(ProdutoModel produtoModel)
-        { 
+        {
             if (produtoModel == null)
-            { return BadRequest("Ocorreu um erro na Solicitação!");
+            {
+                return BadRequest("Ocorreu um erro na Solicitação!");
             }
-            _context.Produtos.Add(produtoModel);
-            _context.SaveChanges();
-
-            return CreatedAtAction(nameof(BuscarProdutoPorId), new { id = produtoModel.id }, produtoModel);
+            else
+            {
+                try
+                {
+                    _context.Produtos.Add(produtoModel);
+                }
+                catch (Exception e)
+                {
+                    return BadRequest($"Ocorreu um erro na criação, erro : {e}");
+                }
+                _context.SaveChanges();
+                return CreatedAtAction(nameof(BuscarProdutoPorId), new { id = produtoModel.id }, produtoModel);
+            }
         }
 
         [HttpDelete]
-        [Route("{id}")]
-        public ActionResult<ProdutoModel> DeletarProduto(int id )
+        [Route("{nome}")]
+        public ActionResult<ProdutoModel> DeletarProduto(string nome )
         {
-            var produto = _context.Produtos.Find(id); 
+            var produto = _context.Produtos.FirstOrDefault(p => p.Nome == nome ); 
 
             if (produto == null)
             {
@@ -84,5 +95,29 @@ namespace api_Rest.Controller
 
 
         }
+
+        [HttpGet]
+        [Route("{Loja}")]
+
+            public ActionResult<ProdutoModel> BuscarProdutoPorLoja(string Loja)
+            {
+            var Produtos = _context.Produtos.Where(x => x.Nome.Contains($"{Loja}"));
+
+                if (Produtos == null)
+                    {
+
+                        return NotFound("Registro não encontrado!");
+                    }
+                else
+                {
+
+                 var lista = Produtos.ToList();
+                    return Ok(lista);
+                }
+
+               
+            }
+
+
     }
 }

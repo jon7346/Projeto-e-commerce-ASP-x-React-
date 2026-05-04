@@ -1,13 +1,15 @@
-const API_URL = "http://localhost:5262/api/Estoque";
+const API_URL = "http://localhost:5262/api/Cliente";
+import { BrowserRouter as Routes, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-function CadastroCliente() {
+function loginClientes() {
         // ===== ESTADOS =====
-    const [clientes, setClientes] = useState([]);
+   
     const [carregando, setCarregando] = useState(false);
     const [nome, setNome] = useState("");
     const [CPF, setCPF] = useState("");
     const [nascimento, setNascimento] = useState("");
+    const [clientes, setClientes] = useState([]);
     
 
     const [erro, setErro] = useState("");
@@ -36,7 +38,7 @@ function CadastroCliente() {
         
      // ===== SALVAR CLIENTE =====
     async function salvarCliente(e) {
-        
+         e.preventDefault();
         setErro("");
 
         if (!nome || !CPF || !nascimento) {
@@ -53,9 +55,9 @@ function CadastroCliente() {
             "Content-Type": "application/json"
             },
             body: JSON.stringify({
-            nome,
-            CPF,
-            nascimento
+            nome: nome,
+            CPF: CPF,
+            nascimento: Date(nascimento)
             })
         });
 
@@ -70,7 +72,7 @@ function CadastroCliente() {
 
 
         // Atualiza lista
-        carregarProdutos();
+        carregarClientes();
         } catch (error) {
         setErro(error.message);
         } finally {
@@ -80,12 +82,12 @@ function CadastroCliente() {
     //RENDER
     return (
     <div style={{ padding: "20px" }}>
-      <h2>Cadastro de Produtos</h2>
+      <h2>Faça login </h2>
 
       <form onSubmit={salvarCliente}>
         <div>
           <input
-            placeholder="Nome do produto"
+            placeholder="Login"
             value={nome}
             onChange={e => setNome(e.target.value)}
           />
@@ -103,11 +105,14 @@ function CadastroCliente() {
             value={nascimento}
             onChange={e => setNascimento(e.target.value)}
             />
+           
         </div>
-    
-        <button type="submit" disabled={carregando}>
-          {carregando ? "Salvando..." : "Salvar"}
-        </button>
+            <br />
+            <button type="submit" disabled={carregando} >
+              {carregando ? "Logando..." : "login"}
+            </button>
+            <br />
+
       </form>
 
       {erro && <p style={{ color: "red" }}>{erro}</p>}
@@ -115,4 +120,4 @@ function CadastroCliente() {
 
     ;    
 }
-export default CadastroClientes;
+export default loginClientes;

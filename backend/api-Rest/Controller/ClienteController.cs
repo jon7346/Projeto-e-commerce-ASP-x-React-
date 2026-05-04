@@ -48,7 +48,15 @@ namespace api_Rest.Controller
             {
                 return BadRequest("Ocorreu um erro na Solicitação!");
             }
-            _context.Clientes.Add(clienteModel);
+
+            try
+            {
+                _context.Clientes.Add(clienteModel);
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Ocorreu um erro na criação, erro : {e}");
+            }
             _context.SaveChanges();
 
             return CreatedAtAction(nameof(BuscarProdutoPorId), new { id = clienteModel.id }, clienteModel);

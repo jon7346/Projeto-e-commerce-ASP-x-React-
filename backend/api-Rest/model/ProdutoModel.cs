@@ -12,5 +12,7 @@
         // isso define o valor inicial como empty
         public string Descricao { get; set; } = string.Empty; 
 
+        public int idloja { get;  set; }
+
     }
 }
