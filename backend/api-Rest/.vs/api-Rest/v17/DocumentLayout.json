@@ -136,7 +136,7 @@
               "RelativeDocumentMoniker": "model\\ClienteModel.cs",
               "ToolTip": "C:\\Users\\jonat\\github\\Projeto-e-commerce-ASP-x-React-\\backend\\api-Rest\\model\\ClienteModel.cs",
               "RelativeToolTip": "model\\ClienteModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-24T00:10:28.183Z",
               "EditorCaption": ""
@@ -151,8 +151,7 @@
               "RelativeToolTip": "Controller\\ClienteController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAA3wDgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-24T00:05:22.687Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-24T00:05:22.687Z"
             },
             {
               "$type": "Document",
@@ -164,8 +163,7 @@
               "RelativeToolTip": "model\\ProdutoModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-23T23:47:19.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T23:47:19.266Z"
             },
             {
               "$type": "Document",
@@ -177,8 +175,7 @@
               "RelativeToolTip": "Controller\\ProdutosController.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwEYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-23T22:48:15.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-23T22:48:15.935Z"
             },
             {
               "$type": "Document",
@@ -190,8 +187,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-22T16:25:21.209Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-22T16:25:21.209Z"
             }
           ]
         }
